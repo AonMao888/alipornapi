@@ -10,6 +10,9 @@ const redtube = require('redtube');
 var r = new redtube({output:'json'});
 
 
+app.get('/',(req,res)=>{
+    res.send('home page')
+})
 app.get('/xvideo',async(req,res)=>{
     let pagequ = req.query.page;
     if(!pagequ){
