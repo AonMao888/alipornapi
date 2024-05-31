@@ -180,4 +180,4 @@ app.get('/pornhub',async(req,res)=>{
    
 })
 
-app.listen(3232,()=>{console.log('Server started with port 3232');})
+app.listen(80,()=>{console.log('Server started with port 3232');})
