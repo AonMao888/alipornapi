@@ -5,9 +5,13 @@ const nswfparse = require('nswfparse');
 const spankbang = require('spankbang');
 const pornpic = require('porn-picture');
 const redtube = require('redtube');
+const cors = require('cors');
 
 
 var r = new redtube({output:'json'});
+app.use(cors({
+    origin: "*",
+}))
 
 
 app.get('/',(req,res)=>{
@@ -183,4 +187,4 @@ app.get('/pornhub',async(req,res)=>{
    
 })
 
-app.listen(80,()=>{console.log('Server started with port 3232');})
+app.listen(80,()=>{console.log('Server started with port 80');})
