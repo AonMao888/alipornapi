@@ -15,7 +15,7 @@ app.use(cors({
 
 
 app.get('/',(req,res)=>{
-    res.send('home page')
+    res.send('Hi')
 })
 app.get('/xvideo',async(req,res)=>{
     let pagequ = req.query.page;
